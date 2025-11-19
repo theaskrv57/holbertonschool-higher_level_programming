@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-def common_elements(set_1, set_2):
-    same = set()
+def only_diff_elements(set_1, set_2):
+    diff = set()
+
     for i in set_1:
-        for j in set_2:
-            if i != j:
-                same.add(i)
-    return same
+        if i not in set_2:
+            diff.add(i)
+
+    for j in set_2:
+        if j not in set_1:
+            diff.add(j)
+
+    return diff
