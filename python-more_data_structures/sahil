@@ -1,0 +1,1 @@
+alias gpy='git add .; git commit -m "python"; git push'
