@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""This module defines a Rectangle class with width, height,
-area, perimeter, string representation using '#', eval-ready repr,
-instance deletion message, and a class attribute tracking number of instances."""
+"""This module defines a Rectangle class with width, height, area,
+perimeter, string representation using '#', eval-ready repr, instance deletion
+message, and a class attribute tracking number of instances.
+"""
 
 
 class Rectangle:
@@ -61,9 +62,11 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string representation that can be used with eval()."""
-        return f"Rectangle({self.__width}, {self.__height})"
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Print a message when the rectangle instance is deleted and decrement instance count."""
+        """Print a message when the rectangle instance is deleted and
+        decrement instance count.
+        """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
