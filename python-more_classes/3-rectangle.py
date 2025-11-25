@@ -57,4 +57,4 @@ class Rectangle:
 
     def __repr__(self):
         """Return official string representation of the rectangle."""
-        return f"<{self.__class__.__name__} object at {hex(id(self))}>"
+        return f"<3-rectangle.{self.__class__.__name__} object at {hex(id(self))}>"
