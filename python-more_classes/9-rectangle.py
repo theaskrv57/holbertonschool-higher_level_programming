@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""Module that defines a Rectangle class."""
-
+"""This module defines a Rectangle class with advanced features."""
 
 class Rectangle:
-    """Defines a rectangle with width, height, and various utilities."""
+    """A class that defines a rectangle."""
 
     number_of_instances = 0
     print_symbol = "#"
@@ -21,7 +20,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set the width with type and value checks."""
+        """Set the width, with type and value checks."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -35,7 +34,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Set the height with type and value checks."""
+        """Set the height, with type and value checks."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -60,17 +59,17 @@ class Rectangle:
                           for _ in range(self.height)])
 
     def __repr__(self):
-        """Return string representation to recreate new instance with eval()."""
+        """Return a string that can recreate the rectangle with eval()."""
         return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
-        """Print a message when an instance is deleted."""
+        """Print a message when a Rectangle instance is deleted."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Return the bigger rectangle based on area."""
+        """Return the rectangle with the bigger area."""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
