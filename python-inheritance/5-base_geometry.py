@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
-
 """salam"""
-
 
 
 class BaseGeometry:
@@ -10,7 +7,6 @@ class BaseGeometry:
 
 
     """salam"""
-
 
 
     pass
