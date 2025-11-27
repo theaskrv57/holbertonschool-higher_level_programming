@@ -1,1 +1,2 @@
-show DATABASES;
+#salam
+SHOW DATABASES;
