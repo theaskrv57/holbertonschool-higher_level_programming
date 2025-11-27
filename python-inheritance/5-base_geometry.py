@@ -3,10 +3,5 @@
 
 
 class BaseGeometry:
-
-
-
     """salam"""
-
-
     pass
