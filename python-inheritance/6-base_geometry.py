@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""salam"""
+
+
 class BaseGeometry:
     """BaseGeometry class"""
 
