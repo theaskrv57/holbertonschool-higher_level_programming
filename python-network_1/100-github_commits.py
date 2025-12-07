@@ -18,4 +18,4 @@ if __name__ == "__main__":
             author_name = commit.get("commit", {}).get("author", {}).get("name")
             print(f"{sha}: {author_name}")
     else:
-        print(f"Error: Unable to fetch commits (status code {response.status_code})")
+        print(f"Error:  (status code {response.status_code})")
